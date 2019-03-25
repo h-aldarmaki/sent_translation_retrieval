@@ -21,8 +21,7 @@ for n in 100 200 500 1000 2000 5000 10000 20000 50000 100000 200000 500000 10000
     thisdir=$datadir/train_$n 
     scratch=$thisdir/elmo
     mkdir $scratch
-    perl $home_dir/scripts/extract_aligned_pairs.pl $thisdir/align/sym.align $scratch/pairs $lang #TODO fast_align should be already done on training set and saved in $thisdir/align
-    #extract dictionary and align training dictionary
+    perl $home_dir/scripts/extract_aligned_pairs.pl $thisdir/align/sym.align $scratch/pairs $lang
     cd $elmodir
     python dump_token_embeddings.py $thisdir/en.tok $scratch/vocab.en $scratch/elmo_token_embeddings.en.hdf5 en
     python dump_token_embeddings.py $thisdir/${lang}.tok $scratch/vocab.$lang $scratch/elmo_token_embeddings.${lang}.hdf5 $lang
