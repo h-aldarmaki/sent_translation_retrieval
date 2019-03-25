@@ -2,6 +2,8 @@
 
 Evaluation scripts and data as described in "Context-Aware Crosslingual Mapping". NAACL 2019. https://arxiv.org/pdf/1903.03243.pdf
 
+The data are derived from WMT'13 parallel sets (common crawl) for Spanish-English and German-English: https://www.statmt.org/wmt13/translation-task.html 
+
 If you use the data or scripts, please cite: 
 
 ```
@@ -11,6 +13,19 @@ If you use the data or scripts, please cite:
   booktitle={Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
   year={2019}
 }
+```
+And
+
+```
+
+@inproceedings{bojar2013findings,
+  title={Findings of the 2013 workshop on statistical machine translation},
+  author={Bojar, Ondrej and Buck, Christian and Federmann, Christian and Haddow, Barry and Koehn, Philipp and Leveling, Johannes and Monz, Christof and Pecina, Pavel and Post, Matt and Saint-Amand, Herve and others},
+  booktitle={Proceedings of the eighth workshop on statistical machine translation},
+  pages={1--44},
+  year={2013}
+}
+
 ```
 
 ## Requirements ##
